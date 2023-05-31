@@ -15,14 +15,14 @@ import React, { useState } from 'react';
 
 export const Exercise1 = () => {
 
-  const [person, setPerson] = useState("");
+  const [person, setPerson] = useState({});
   // console.log(person);
 
   const handleChange = (e) => {
     setPerson({...person, [e.target.name]: e.target.value});
   }
 
-  const showInfo = (e) => {
+  const handleSubmit = (e) => {
     console.log(person);
     e.preventDefault();
     setPerson("");
@@ -30,7 +30,7 @@ export const Exercise1 = () => {
 
   return (
     <div>
-      <form onSubmit={showInfo}>
+      <form onSubmit={handleSubmit}>
         <label className="mr-5">Name: 
           <input className="border-solid border-2 border-black ml-2 " type="text" name="name" value={[person.name]} onChange={handleChange}/>
         </label>
