@@ -2,6 +2,7 @@ import { Disclosure } from '@headlessui/react'
 // import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
 import {Exercise1} from './Exercises/Exercise1/Exercise1';
 import Exercise2 from './Exercises/Exercise2/Exercise2';
+import Exercise3 from './Exercises/Exercise3/Exercise3';
 
 function App() {
 
@@ -29,7 +30,8 @@ function App() {
           <div className="mx-auto max-w-7xl py-6 sm:px-6 lg:px-8">
             {/* Your code goes here */}
             {/* <Exercise1 /> */}
-            <Exercise2 />
+            {/* <Exercise2 /> */}
+            <Exercise3 />
 
           </div>
         </main>
